@@ -1,10 +1,14 @@
-APP="deploy_phoenix"
+#!/usr/bin/env bash
+
+APP="phoenix_deploy"
 
 BUILD_HOST="142.93.114.101"
 BUILD_USER="deploy"
-BUILD_AT="/tmp/edeliver/$APP/builds"
+# BUILD_AT="/tmp/edeliver/$APP/builds"
+BUILD_AT="/tmp/edeliver/builds"
 
-RELEASE_DIR="/tmp/edeliver/$APP/builds/_build/prod/rel/$APP"
+# RELEASE_DIR="/tmp/edeliver/$APP/builds/_build/prod/rel/$APP"
+RELEASE_DIR="/tmp/edeliver/builds/_build/prod/rel/$APP"
 
 # prevent re-installing node modules; this defaults to "."
 GIT_CLEAN_PATHS="_build rel priv/static"
